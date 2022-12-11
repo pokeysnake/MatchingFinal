@@ -14,7 +14,33 @@ import android.widget.Toast;
 
 import android.os.Bundle;
 
+import java.util.Random;
+
 public class GameScreen extends AppCompatActivity {
+    String b1Text="";
+    String b2Text="";
+    String b3Text="";
+    String b4Text="";
+    String b5Text="";
+    String b6Text="";
+    String b7Text="";
+    String b8Text="";
+    String b9Text="";
+    String b10Text="";
+    String b11Text="";
+    String b12Text="";
+    String b13Text="";
+    String b14Text="";
+    String b15Text="";
+    String b16Text="";
+    String b17Text="";
+    String b18Text="";
+    String b19Text="";
+    String b20Text="";
+
+
+
+
     int score=0;
 int oneTime;
 Button buttonB4Last;
@@ -70,11 +96,6 @@ TextView displayScore;
         b19.setVisibility(View.VISIBLE);
         b20.setVisibility(View.VISIBLE);
 
-
-
-
-
-
         String x = inputText.getText().toString();
         if(x.equals("4")){
         b5.setVisibility(View.INVISIBLE);
@@ -93,6 +114,10 @@ TextView displayScore;
             b18.setVisibility(View.INVISIBLE);
             b19.setVisibility(View.INVISIBLE);
             b20.setVisibility(View.INVISIBLE);
+            b1Text="yellow";//
+            b2Text="blue";//
+            b3Text="blue";//
+            b4Text="yellow";//
         }
         if(x.equals("6")){
             b7.setVisibility(View.INVISIBLE);
@@ -109,6 +134,12 @@ TextView displayScore;
             b18.setVisibility(View.INVISIBLE);
             b19.setVisibility(View.INVISIBLE);
             b20.setVisibility(View.INVISIBLE);
+            b1Text="red";//
+            b2Text="blue";//
+            b3Text="red";//
+            b4Text="blue";//
+            b5Text="orange";//
+            b6Text="orange";//
         }
         if(x.equals("8")){
             b9.setVisibility(View.INVISIBLE);
@@ -123,6 +154,14 @@ TextView displayScore;
             b18.setVisibility(View.INVISIBLE);
             b19.setVisibility(View.INVISIBLE);
             b20.setVisibility(View.INVISIBLE);
+            b1Text="green";//
+            b2Text="red";//
+            b3Text="red";//
+            b4Text="purple";//
+            b5Text="orange";//
+            b6Text="orange";//
+            b7Text="purple";//
+            b8Text="green";//
         }
         if(x.equals("10")){
             b11.setVisibility(View.INVISIBLE);
@@ -135,6 +174,17 @@ TextView displayScore;
             b18.setVisibility(View.INVISIBLE);
             b19.setVisibility(View.INVISIBLE);
             b20.setVisibility(View.INVISIBLE);
+            b1Text="green";//
+            b2Text="yellow";
+            b3Text="red";//
+            b4Text="yellow";
+            b5Text="orange";//
+            b6Text="orange";//
+            b7Text="purple";//
+            b8Text="green";//
+            b9Text="red";//
+            b10Text="purple";//
+
         }
         if(x.equals("12")){
             b13.setVisibility(View.INVISIBLE);
@@ -145,6 +195,19 @@ TextView displayScore;
             b18.setVisibility(View.INVISIBLE);
             b19.setVisibility(View.INVISIBLE);
             b20.setVisibility(View.INVISIBLE);
+            b1Text="green";//
+            b2Text="blue";//
+            b3Text="red";//
+            b4Text="yellow";//
+            b5Text="orange";//
+            b6Text="orange";//
+            b7Text="purple";//
+            b8Text="green";//
+            b9Text="red";//
+            b10Text="purple";//
+            b11Text="yellow";//
+            b12Text="blue";//
+
         }
         if(x.equals("14")){
             b15.setVisibility(View.INVISIBLE);
@@ -153,16 +216,86 @@ TextView displayScore;
             b18.setVisibility(View.INVISIBLE);
             b19.setVisibility(View.INVISIBLE);
             b20.setVisibility(View.INVISIBLE);
+            b1Text="green"; //
+            b2Text="blue";//
+            b3Text="red";//
+            b4Text="yellow";//
+            b5Text="orange";//
+            b6Text="orange";//
+            b7Text="purple";//
+            b8Text="green";//
+            b9Text="red";//
+            b10Text="purple";//
+            b11Text="yellow";//
+            b12Text="white";//
+            b13Text="blue";//
+            b14Text="white";//
         }
         if(x.equals("16")){
             b17.setVisibility(View.INVISIBLE);
             b18.setVisibility(View.INVISIBLE);
             b19.setVisibility(View.INVISIBLE);
             b20.setVisibility(View.INVISIBLE);
+            b1Text="green"; //
+            b2Text="blue";//
+            b3Text="red";//
+            b4Text="yellow";//
+            b5Text="orange";//
+            b6Text="orange";//
+            b7Text="purple";//
+            b8Text="green"; //
+            b9Text="red"; //
+            b10Text="purple";//
+            b11Text="yellow";//
+            b12Text="white";//
+            b13Text="blue";//
+            b14Text="silver";//
+            b15Text="white";//
+            b16Text="black";//
         }
         if(x.equals("18")){
             b19.setVisibility(View.INVISIBLE);
             b20.setVisibility(View.INVISIBLE);
+            b1Text="green"; //
+            b2Text="blue";//
+            b3Text="red";//
+            b4Text="yellow";//
+            b5Text="orange";//
+            b6Text="orange";//
+            b7Text="purple";//
+            b8Text="green"; //
+            b9Text="red"; //
+            b10Text="purple";//
+            b11Text="yellow";//
+            b12Text="white";//
+            b13Text="blue";//
+            b14Text="silver";//
+            b15Text="white";//
+            b16Text="black";//
+            b17Text="silver";//
+            b18Text="black";//
+
+        }if(x.equals("20")){
+            b1Text="green";
+            b2Text="blue";
+            b3Text="red";
+            b4Text="yellow";
+            b5Text="orange";
+            b6Text="orange";
+            b7Text="purple";
+            b8Text="green";
+            b9Text="red";
+            b10Text="purple";
+            b11Text="yellow";
+            b12Text="white";
+            b13Text="blue";
+            b14Text="silver";
+            b15Text="white";
+            b16Text="black";
+            b17Text="grey";
+            b18Text="black";
+            b19Text="grey";
+            b20Text="silver";
         }
     }
 
@@ -296,26 +429,26 @@ TextView displayScore;
                 b18.setBackgroundColor(Color.WHITE);
                 b19.setBackgroundColor(Color.WHITE);
                 b20.setBackgroundColor(Color.WHITE);
-                b1.setText("green");
-                b2.setText("blue");
-                b3.setText("red");
-                b4.setText("yellow");
-                b5.setText("orange");
-                b6.setText("orange");
-                b7.setText("purple");
-                b8.setText("green");
-                b9.setText("red");
-                b10.setText("purple");
-                b11.setText("yellow");
-                b12.setText("white");
-                b13.setText("blue");
-                b14.setText("silver");
-                b15.setText("white");
-                b16.setText("black");
-                b17.setText("grey");
-                b18.setText("black");
-                b19.setText("grey");
-                b20.setText("silver");
+                b1.setText(b1Text);
+                b2.setText(b2Text);
+                b3.setText(b3Text);
+                b4.setText(b4Text);
+                b5.setText(b5Text);
+                b6.setText(b6Text);
+                b7.setText(b7Text);
+                b8.setText(b8Text);
+                b9.setText(b9Text);
+                b10.setText(b10Text);
+                b11.setText(b11Text);
+                b12.setText(b12Text);
+                b13.setText(b13Text);
+                b14.setText(b14Text);
+                b15.setText(b15Text);
+                b16.setText(b16Text);
+                b17.setText(b17Text);
+                b18.setText(b18Text);
+                b19.setText(b19Text);
+                b20.setText(b20Text);
 
 
 
@@ -394,8 +527,8 @@ TextView displayScore;
         numbers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 createBoard();
+
             }
         });
         bTryAgain.setOnClickListener(new View.OnClickListener() {
@@ -415,7 +548,7 @@ TextView displayScore;
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String b1Text = "green";
+                //String b1Text = "green";
                 System.out.println("The button was clicked");
                 b1.setText(b1Text);
                 b1.setBackgroundResource(R.drawable.purple);
@@ -428,7 +561,7 @@ TextView displayScore;
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String b2Text = "blue";
+                //String b2Text = "blue";
                 b2.setText(b2Text);
                 System.out.println("The button was clicked");
                 b2.setBackgroundResource(R.drawable.th2);
@@ -441,8 +574,8 @@ TextView displayScore;
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "red";
-                b3.setText(bText);
+                //String bText = "red";
+                b3.setText(b3Text);
                 System.out.println("The button was clicked");
                 b3.setBackgroundResource(R.drawable.th3);
                 b3.setBackgroundColor(Color.WHITE);
@@ -455,8 +588,8 @@ TextView displayScore;
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "yellow";
-                b4.setText(bText);
+                //String bText = "yellow";
+                b4.setText(b4Text);
                 System.out.println("The button was clicked");
                 b4.setBackgroundResource(R.drawable.th4);
                 b4.setBackgroundColor(Color.WHITE);
@@ -468,8 +601,8 @@ TextView displayScore;
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "orange";
-                b5.setText(bText);
+                //String bText = "orange";
+                b5.setText(b5Text);
                 System.out.println("The button was clicked");
                 b5.setBackgroundResource(R.drawable.th5);
                 b5.setBackgroundColor(Color.WHITE);
@@ -481,8 +614,8 @@ TextView displayScore;
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "orange";
-                b6.setText(bText);
+                //String bText = "orange";
+                b6.setText(b6Text);
                 System.out.println("The button was clicked");
                 b6.setBackgroundResource(R.drawable.th6);
                 b6.setBackgroundColor(Color.WHITE);
@@ -494,8 +627,8 @@ TextView displayScore;
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "purple";
-                b7.setText(bText);
+                //String bText = "purple";
+                b7.setText(b7Text);
                 System.out.println("The button was clicked");
                 b7.setBackgroundResource(R.drawable.th7);
                 b7.setBackgroundColor(Color.WHITE);
@@ -507,8 +640,8 @@ TextView displayScore;
         b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "green";
-                b8.setText(bText);
+                //String bText = "green";
+                b8.setText(b8Text);
                 System.out.println("The button was clicked");
                 b8.setBackgroundResource(R.drawable.th8);
                 b8.setBackgroundColor(Color.WHITE);
@@ -520,8 +653,8 @@ TextView displayScore;
         b9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "red";
-                b9.setText(bText);
+                //String bText = "red";
+                b9.setText(b9Text);
                 System.out.println("The button was clicked");
                 //b9.setBackgroundResource(R.drawable.th9);
                 b9.setBackgroundColor(Color.WHITE);
@@ -532,8 +665,8 @@ TextView displayScore;
         b10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "purple";
-                b10.setText(bText);
+                //String bText = "purple";
+                b10.setText(b10Text);
                 System.out.println("The button was clicked");
                 b10.setBackgroundResource(R.drawable.purple);
                 b10.setBackgroundColor(Color.WHITE);
@@ -544,8 +677,8 @@ TextView displayScore;
         b11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "yellow";
-                b11.setText(bText);
+                //String bText = "yellow";
+                b11.setText(b11Text);
                 System.out.println("The button was clicked");
                 b11.setBackgroundResource(R.drawable.th3);
                 b11.setBackgroundColor(Color.WHITE);
@@ -556,8 +689,8 @@ TextView displayScore;
         b12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "white";
-                b12.setText(bText);
+                //String bText = "white";
+                b12.setText(b12Text);
                 System.out.println("The button was clicked");
                 b12.setBackgroundResource(R.drawable.th2);
                 b12.setBackgroundColor(Color.WHITE);
@@ -568,8 +701,8 @@ TextView displayScore;
         b13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "blue";
-                b13.setText(bText);
+                //String bText = "blue";
+                b13.setText(b13Text);
                 System.out.println("The button was clicked");
                 b13.setBackgroundResource(R.drawable.th3);
                 b13.setBackgroundColor(Color.WHITE);
@@ -580,8 +713,8 @@ TextView displayScore;
         b14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "silver";
-                b14.setText(bText);
+                //String bText = "silver";
+                b14.setText(b14Text);
                 System.out.println("The button was clicked");
                 b14.setBackgroundResource(R.drawable.th4);
                 b14.setBackgroundColor(Color.WHITE);
@@ -592,8 +725,8 @@ TextView displayScore;
         b15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "white";
-                b15.setText(bText);
+                //String bText = "white";
+                b15.setText(b15Text);
                 System.out.println("The button was clicked");
                 b15.setBackgroundResource(R.drawable.th5);
                 b15.setBackgroundColor(Color.WHITE);
@@ -604,8 +737,8 @@ TextView displayScore;
         b16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "black";
-                b16.setText(bText);
+                //String bText = "black";
+                b16.setText(b16Text);
                 System.out.println("The button was clicked");
                 b16.setBackgroundResource(R.drawable.th6);
                 b16.setBackgroundColor(Color.WHITE);
@@ -616,8 +749,8 @@ TextView displayScore;
         b17.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "grey";
-                b17.setText(bText);
+                //String bText = "grey";
+                b17.setText(b17Text);
                 System.out.println("The button was clicked");
                 b17.setBackgroundResource(R.drawable.th7);
                 b17.setBackgroundColor(Color.WHITE);
@@ -628,8 +761,8 @@ TextView displayScore;
         b18.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "black";
-                b18.setText(bText);
+                //String bText = "black";
+                b18.setText(b18Text);
                 System.out.println("The button was clicked");
                 b18.setBackgroundResource(R.drawable.th8);
                 b18.setBackgroundColor(Color.WHITE);
@@ -640,8 +773,8 @@ TextView displayScore;
         b19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "grey";
-                b19.setText(bText);
+                //String bText = "grey";
+                b19.setText(b19Text);
                 System.out.println("The button was clicked");
                 //b19.setBackgroundResource(R.drawable.th9);
                 b19.setBackgroundColor(Color.WHITE);
@@ -652,8 +785,8 @@ TextView displayScore;
         b20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String bText = "silver";
-                b20.setText(bText);
+                //String bText = "silver";
+                b20.setText(b20Text);
                 System.out.println("The button was clicked");
                 b20.setBackgroundResource(R.drawable.th2);
                 b20.setBackgroundColor(Color.WHITE);
