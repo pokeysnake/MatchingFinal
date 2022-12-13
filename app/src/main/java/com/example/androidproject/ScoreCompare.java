@@ -8,7 +8,7 @@ public class ScoreCompare implements Comparable<Score>{
     private String score;
     private String date;
 
-    public Score(String name, String score, String date) {
+    public ScoreCompare(String name, String score, String date) {
         this.name = name;
         this.score = score;
         this.date = date;
